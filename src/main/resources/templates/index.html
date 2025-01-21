@@ -12,8 +12,6 @@
     </form>
 
     <h2>AI Response:</h2>
-    <div th:if="${response != null}">
-        <p th:text="${response}"></p>
-    </div>
+    <div th:if="${response != null}" th:utext="${response}"></div>
 </body>
 </html>
