@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AI Integration</title>
+</head>
+<body>
+    <h1>AI Prompt</h1>
+    <form action="/get-response" method="post">
+        <label for="prompt">Enter your prompt:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>AI Response:</h2>
+    <div th:if="${response != null}">
+        <p th:text="${response}"></p>
+    </div>
+</body>
+</html>
