@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class AIService {
 
     private static final String AI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY";
-    private static final String API_KEY = "AIzaSyD2v3MRK7gqst4dXIkvfsQXj-oCUe05z-I";
+    private static final String API_KEY = "Your_API_Key";
 
     public String getAIResponse(String prompt) {
         try {
